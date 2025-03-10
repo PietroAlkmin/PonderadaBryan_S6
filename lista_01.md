@@ -26,9 +26,11 @@ a) A saída será undefined seguido de erro
 
 b) A saída será 5 seguido de 10
 
-c) A saída será undefined seguido de undefined
+**✅ c) A saída será undefined seguido de undefined**
 
 d) A saída será erro em ambas as linhas que utilizam console.log
+
+**R: A letra c está correta pois a varivel foi definida depois do comando ser executado, entao a variavel (x) e a variavel (y) ainda nao foram definidas por isso undefined.**
 
 
 **2) O seguinte código JavaScript tem um erro que impede sua execução correta. Analise e indique a opção que melhor corrige o problema. Justifique sua resposta.**
@@ -43,13 +45,15 @@ function soma(a, b) {
 console.log(soma(2, 0));
 ```
 
-a) Substituir if (a || b === 0) por if (a === 0 || b === 0)
+**a) ✅Substituir if (a || b === 0) por if (a === 0 || b === 0)**
 
 b) Substituir if (a || b === 0) por if (a === 0 && b === 0)
 
 c) Substituir if (a || b === 0) por if (a && b === 0)
 
 d) Remover completamente a verificação if (a || b === 0)
+
+**R: A alternativa (a) está correta porque atribuir a igualdade somente a b faz com que a igualdade === seja verificada primeiramente, fazendo com que qualquer valor aplicado a b seja atribuido como falso.**
 
 ______
 **3) Ao executar esse código, qual será a saída no console? Indique a alternativa correta e justifique sua resposta.**
