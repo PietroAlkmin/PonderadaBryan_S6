@@ -134,11 +134,13 @@ II. Em JavaScript, a herança é implementada através da palavra-chave `extends
 
 a) As duas afirmações são verdadeiras, e a segunda justifica a primeira.
 
-b) As duas afirmações são verdadeiras, mas a segunda não justifica a primeira.
+**b)✅As duas afirmações são verdadeiras, mas a segunda não justifica a primeira.**
 
 c) A primeira afirmação é verdadeira, e a segunda é falsa.
 
 d) A primeira afirmação é falsa, e a segunda é verdadeira.
+
+**R: Não entendi muito bem, pois a afirmativa 2 está parcialmente certa, uma vez que para realmente herdar uma característica de uma outra classe precisa usar o "super()" e selecionar as características que deseja. Então a afirmativa 1 está correta, e a b está parcialmente correta.**
 ______
 **7) Dado o seguinte código. Indique a alternativa correta e justifique sua resposta.**
 
@@ -165,16 +167,23 @@ class Funcionario extends Pessoa {
     console.log(`Meu salário é R$ ${this.salario}.`);
   }
 }
+
+let pessoa1 = new Funcionario("caio", 25, 6000);
+pessoa1.apresentar();
+ resultado:
+'Olá, meu nome é caio e tenho 25 anos.'
+'Meu salário é R$ 6000.'
+
 ```
 
 
-I) A classe Funcionario herda de Pessoa e pode acessar os atributos nome e idade diretamente.  
-II) O método `apresentar()` da classe Funcionario sobrepõe o método `apresentar()` da classe Pessoa, mas chama o método da classe pai usando `super`.  
-III) O código não funciona corretamente, pois Funcionario não pode herdar de Pessoa como uma classe, já que o JavaScript não suporta herança de classes.
+I) A classe Funcionario herda de Pessoa e pode acessar os atributos nome e idade diretamente. ✅
+II) O método `apresentar()` da classe Funcionario sobrepõe o método `apresentar()` da classe Pessoa, mas chama o método da classe pai usando `super`.✅
+III) O código não funciona corretamente, pois Funcionario não pode herdar de Pessoa como uma classe, já que o JavaScript não suporta herança de classes.❌
 
 Quais das seguintes afirmações são verdadeiras sobre o código acima?
 
-a) I e II são verdadeiras.
+**a) I e II são verdadeiras. ✅**
 
 b) I, II e III são verdadeiras.
 
@@ -182,6 +191,11 @@ c) Apenas II é verdadeira.
 
 d) Apenas I é verdadeira.
 
+**R: let pessoa1 = new Funcionario("caio", 25, 6000);
+pessoa1.apresentar();
+ resultado:
+'Olá, meu nome é caio e tenho 25 anos.'
+'Meu salário é R$ 6000.'**
 ______
 
 **8) Analise as afirmações a seguir. Indique a alternativa correta e justifique sua resposta.**
@@ -191,12 +205,13 @@ ______
 
 a) A asserção é falsa e a razão é verdadeira.
 
-b) A asserção é verdadeira e a razão é falsa.
+**b) ✅A asserção é verdadeira e a razão é falsa.**
 
 c) A asserção é verdadeira e a razão é verdadeira, mas a razão não explica a asserção.
 
 d) A asserção é verdadeira e a razão é verdadeira, e a razão explica a asserção.
 
+**R: Sei que a **razão** está errada pois o método de sobrecarga não está correto, mas sim o de sobrescrita**
 ______
 
 # Questões dissertativas
@@ -212,6 +227,23 @@ function somaArray(numeros) {
 }
 console.log(somaArray([1, 2, 3, 4]));
 ```
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+```function somaArray(numeros) {
+  let somaTotal = 0; // Criando uma variável para armazenar o resultado
+
+  for (let i = 0; i < numeros.length; i++) { // .size nao funciona e sim .length
+    somaTotal += 2 * numeros[i]; // Acumulando a soma
+  }
+
+  return somaTotal; // Retornando a soma total
+}
+
+let numeros = [1, 2, 3, 4]; // criando a array números
+console.log(somaArray(numeros)); 
+```
+
 ______
 10) Crie um exemplo prático no qual você tenha duas classes:
 
