@@ -228,9 +228,10 @@ function somaArray(numeros) {
 console.log(somaArray([1, 2, 3, 4]));
 ```
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**RESPOSTA:**
 
-
-```function somaArray(numeros) {
+```javascript
+function somaArray(numeros) {
   let somaTotal = 0; // Criando uma variável para armazenar o resultado
 
   for (let i = 0; i < numeros.length; i++) { // .size nao funciona e sim .length
@@ -251,3 +252,44 @@ ______
 - Uma classe `Livro` que herda de `Produto` e modifica o método `calcularDesconto()`, aplicando um desconto de 20% no preço dos livros.
 
 Explique como funciona a herança nesse contexto e como você implementaria a modificação do método na classe `Livro`.
+
+
+```javascript
+class Produto {
+  constructor(nome, preco){
+    this.nome = nome;
+    this.preco = preco;
+  }
+  
+  calcularDesconto(){
+    
+    let desconto = this.preco * 0.1;
+    let precoFinal = this.preco - desconto;
+    console.log(`o produto ${this.nome} custa ${this.preco}, porem você possui um desconto de 10% saindo por ${precoFinal}`)
+  }
+}
+
+
+class Livro extends Produto{
+  constructor(nome,preco){
+    super(nome,preco)
+  }
+  calcularDesconto(){
+    let desconto = this.preco * 0.2;
+    let precoFinal = this.preco - desconto;
+    console.log(`o Livro ${this.nome} custa ${this.preco}, porem você possui um desconto de 20% saindo por ${precoFinal}`)
+  }
+}
+
+item1 = new Livro("relativity", 99)
+item1.calcularDesconto();
+```
+
+
+**R: Nesse exemplo a herença funciona ao importar da classe pai "Produto" as variaveis nome e preco, e no meu caso, copiei e colei o metódo calcularDesconto() e troquei as partes necessárias.
+
+
+
+
+
+
