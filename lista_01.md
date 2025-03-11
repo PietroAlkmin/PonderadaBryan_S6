@@ -286,7 +286,7 @@ item1.calcularDesconto();
 ```
 
 
-**R: Nesse exemplo a herença funciona ao importar da classe pai "Produto" as variaveis nome e preco, e no meu caso, copiei e colei o metódo calcularDesconto() e troquei as partes necessárias.
+**R: Nesse exemplo a herença funciona ao importar da classe pai "Produto" as variaveis nome e preco, e no meu caso, copiei e colei o metódo calcularDesconto() e troquei as partes necessárias.**
 
 
 
