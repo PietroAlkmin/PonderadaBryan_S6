@@ -82,12 +82,13 @@ console.log(calcularPreco("eletrônico"));
 
 a) O código imprime 1000.
 
-b) O código imprime 200.
+**b)✅ O código imprime 200.**
 
 c) O código imprime 50.
 
 d) O código gera um erro.
 
+**R: O código imprime 200 pois não tem um "break;" depois do case eletrônico.**
 ______
 **4) Ao executar esse código, qual será a saída no console? Indique a alternativa correta e justifique sua resposta.**
 ```javascript
@@ -103,13 +104,15 @@ b) 6
 
 c) 18
 
-d) 24
+**d)✅24**
+
+**R:Primeiro o código multiplica por 2 cada número da array, após isso o .filter filtra os números maiores que 5, depois disso o código soma os números filtrados.**
 ______
 **5) Qual será o conteúdo do array lista após a execução do código? Indique a alternativa correta e justifique sua resposta.**
 
 ```javascript
 let lista = ["banana", "maçã", "uva", "laranja"];
-lista.splice(1, 2, "abacaxi", "manga");
+lista.splice(1, 2, "abacaxi", "manga"); // splice = emendar, entao o .splice diz para emendar "abacaxi" e "manga" no lugar da "maçã" e da "uva"(posição 1 e emende no lugar dos 2, onde esse 2 representa a maçã e a "uva") na lista
 console.log(lista);
 ```
 
@@ -119,7 +122,9 @@ b) ["banana", "abacaxi", "manga"]
 
 c) ["banana", "abacaxi", "manga", "laranja"]
 
-d) ["banana", "maçã", "uva", "abacaxi", "manga"]
+**d) ✅["banana", "maçã", "uva", "abacaxi", "manga"]**
+
+**R: splice = emendar, entao o .splice diz para emendar "abacaxi" e "manga" no lugar da "maçã" e da "uva"(posição 1 e emende no lugar dos 2, onde esse 2 representa a maçã e a "uva") na lista**
 ______
 **6) Abaixo há duas afirmações sobre herança em JavaScript. Indique a alternativa correta e justifique sua resposta**
 
